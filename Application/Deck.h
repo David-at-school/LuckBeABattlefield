@@ -7,7 +7,7 @@ class Deck {
 
 public:
 	Card Draw();
-	void Discard(Card discard);
+	void Discard(Card& discard);
 	void Shuffle();
 
 private:
