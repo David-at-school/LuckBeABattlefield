@@ -47,5 +47,8 @@
     <ClInclude Include="Deck.h">
       <Filter>Source Files\Tommy</Filter>
     </ClInclude>
+    <ClInclude Include="Utilities.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
