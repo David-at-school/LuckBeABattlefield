@@ -1,12 +1,29 @@
-#include "Deck.h"
-#include "Player.h"
-#include "Battle.h"
+#include "Game.h"
 #include <iostream>
-
+//main
 int main(int argc, char** argv) {
-	srand(time(NULL));
-	Deck deck;
-	Player p1(1, deck);
-	Player p2(2, deck);
-	std::cout << "Player " << battle2Players(p1, p2) << " WINS!" << std::endl;
+	std::cout << "Hello there, ZaXx was here" << std::endl;
+
+	Game game;
+	game.Initialize();
+
+	// wait for keyboard enter to exit
+	bool quit = false;
+	SDL_Event event;
+	while (!quit && !game.IsQuit())
+	{
+		SDL_PollEvent(&event);
+		switch (event.type)
+		{
+		case SDL_QUIT:
+			quit = true;
+			break;
+		}
+
+		game.Draw();
+		game.Update();
+	}
+
+	SDL_Quit();
+	return 0;
 }

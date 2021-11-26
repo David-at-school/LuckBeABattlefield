@@ -13,39 +13,53 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
-    <Filter Include="Source Files\Tommy">
-      <UniqueIdentifier>{23788a21-3acd-4188-a447-bb9070ddc31a}</UniqueIdentifier>
-    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Main.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Player.cpp">
-      <Filter>Source Files\Tommy</Filter>
-    </ClCompile>
     <ClCompile Include="Battle.cpp">
-      <Filter>Source Files\Tommy</Filter>
+      <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="Card.cpp">
-      <Filter>Source Files\Tommy</Filter>
+      <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="Deck.cpp">
-      <Filter>Source Files\Tommy</Filter>
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Player.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Game.cpp">
+      <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Card.h">
-      <Filter>Source Files\Tommy</Filter>
-    </ClInclude>
-    <ClInclude Include="Player.h">
-      <Filter>Source Files\Tommy</Filter>
-    </ClInclude>
     <ClInclude Include="Battle.h">
-      <Filter>Source Files\Tommy</Filter>
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Card.h">
+      <Filter>Source Files</Filter>
     </ClInclude>
     <ClInclude Include="Deck.h">
-      <Filter>Source Files\Tommy</Filter>
+      <Filter>Source Files</Filter>
     </ClInclude>
+    <ClInclude Include="Player.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Game.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="..\Build\resources\board.txt">
+      <Filter>Resource Files</Filter>
+    </Text>
+    <Text Include="..\build\resources\scene.txt">
+      <Filter>Resource Files</Filter>
+    </Text>
+    <Text Include="..\Build\resources\title.txt">
+      <Filter>Resource Files</Filter>
+    </Text>
   </ItemGroup>
 </Project>
