@@ -7,8 +7,9 @@
 /// </summary>
 /// <param name="player1">First Player in Battle</param>
 /// <param name="player2">Second Player in Battle</param>
-/// <returns>ID of the winner</returns>
-int battle2Players(Player player1, Player player2);
+/// <param name="reversed">Checks to see if the battle is currently reversed</param>
+/// <returns></returns>
+int battle2Players(Player player1, Player player2, bool reversed = false);
 
 /// <summary>
 /// A Battle between all Players

@@ -1,6 +1,6 @@
 #include "Battle.h"
 
-int battle2Players(Player player1, Player player2)
+int battle2Players(Player player1, Player player2, bool reversed)
 {
 	Card card1;
 	Card card2;
@@ -9,15 +9,29 @@ int battle2Players(Player player1, Player player2)
 		card1 = player1.playCard();
 		card2 = player2.playCard();
 		//Check for Jokers
-			//Ask Players if they would like to play a Joker
+		if (player1.playJoker()) {
+			reversed = !reversed;
+		}
+		if (player2.playJoker()) {
+			reversed = !reversed;
+		}
+		//If a player plays a 7, then it flips reversed
+		if (card1.number == 7) reversed = !reversed;
+		if (card2.number == 7) reversed = !reversed;
 		//Determine if Tie
-	} while (!card1.isEqual(card2));
+	} while (card1.isEqual(card2));
 	//Determine who won
-	if (card1.isHigher(card2)) {
+	if (reversed) { //Is the battle reversed
+		if (!card1.isHigher(card2)) {
+			return player2.playerID;
+		}
 		return player1.playerID;
 	}
 	else {
-		return player2.playerID;
+		if (card1.isHigher(card2)) {
+			return player1.playerID;
+		}
+			return player2.playerID;
 	}
 }
 

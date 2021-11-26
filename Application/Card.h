@@ -20,8 +20,8 @@ public:
 	/// <returns>If it's equal to the number or not</returns>
 	bool isEqual(Card other);
 
-private:
 	int number;
+private:
 
 
 };

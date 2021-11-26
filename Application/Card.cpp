@@ -8,7 +8,7 @@ bool Card::isHigher(Card other){
 
 bool Card::isEqual(Card other)
 {
-	if (this->number = other.number)
+	if (this->number == other.number)
 		return true;
 	return false;
 }

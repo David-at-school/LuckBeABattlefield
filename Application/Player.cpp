@@ -3,7 +3,7 @@
 Card Player::playCard()
 {
 	if (hand.empty()) {
-		return deck.Draw();
+		return deck->Draw();
 	}
 
 	//Prompt Menu for what card they would like to play
@@ -14,5 +14,14 @@ Card Player::playCard()
 
 bool Player::playJoker()
 {
+	bool canPlay = false;
+	for (Card c : hand) {
+		if (c.number == 0) canPlay = true;
+	}
+	if (canPlay) {
+		//Ask the player if they would like to play a Joker Card
+		//If player plays a joker return true, otherwise return false
+	}
+
 	return false;
 }

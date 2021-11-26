@@ -1,17 +1,17 @@
 #pragma once
 #include "Card.h"
-#include <list>
+#include <vector>
 
 class Deck {
-	Deck();
 
 public:
+	Deck();
 	Card Draw();
 	void Discard(Card& discard);
 	void Shuffle();
 
 private:
-	std::list<Card> deck;
-	std::list<Card> discard;
+	std::vector<Card> deck;
+	std::vector<Card> discard;
 
 };

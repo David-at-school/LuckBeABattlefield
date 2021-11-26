@@ -1,13 +1,11 @@
 #pragma once
 #include "Deck.h"
-#include <string>
-#include <list>
 #include <iostream>
 
 class Player {
-	Player(int playerID, Deck& deck) : playerID{ playerID }, deck{ deck } {}
 
 public:
+	Player(int playerID, Deck& deck) : playerID{ playerID }, deck{ &deck } {}
 	/// <summary>
 	/// A Player chooses a Card for them to play if no 
 	/// </summary>
@@ -23,6 +21,6 @@ public:
 	int playerID;
 private:
 	std::string name;
-	std::list<Card> hand;
-	Deck deck;
+	std::vector<Card> hand;
+	Deck* deck;
 };
