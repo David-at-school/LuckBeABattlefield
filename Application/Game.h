@@ -22,8 +22,8 @@ public:
 	bool IsQuit() { return quit; };
 
 private:
-	//void Reset();
-	//void Title();
+	void Reset();
+	void Title();
 	void StartGame();
 	void GameOver();
 
