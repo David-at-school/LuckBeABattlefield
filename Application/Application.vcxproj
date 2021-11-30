@@ -21,7 +21,7 @@
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
-    <ProjectGuid>{221c7dcd-6557-4235-ab27-089ed056844f}</ProjectGuid>
+    <ProjectGuid>{8ad39db5-1e2a-4e50-844f-964bed92f2c5}</ProjectGuid>
     <RootNamespace>Application</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
@@ -163,12 +163,12 @@
   </ItemGroup>
   <ItemGroup>
     <Text Include="..\Build\resources\board.txt" />
-    <Text Include="..\Build\resources\scene.txt" />
+    <Text Include="..\build\resources\scene.txt" />
     <Text Include="..\Build\resources\title.txt" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Engine\Engine.vcxproj">
-      <Project>{9e138dd1-1a77-4a43-a7b9-c6d8ecd23f38}</Project>
+      <Project>{6bf853ee-5d5b-4c04-b24a-1716413c1676}</Project>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
