@@ -1,0 +1,38 @@
+{
+	"numTilesX":21,
+	"numTilesY":21,
+	"start":[24,24],
+	"size":[48,48],
+	"tileNames": ["white", "black", "blue", "green", "red", "yellow", "blanktile", "draw1", "draw2",
+		"blue_topleft", "blue_top", "blue_topright", "blue_midleft", "blue_mid", "blue_midright", "blue_botleft", "blue_bot", "blue_botright",
+		"green_topleft", "green_top", "green_topright", "green_midleft", "green_mid", "green_midright", "green_botleft", "green_bot", "green_botright",
+		"red_topleft", "red_top", "red_topright", "red_midleft", "red_mid", "red_midright", "red_botleft", "red_bot", "red_botright",
+		"yellow_topleft", "yellow_top", "yellow_topright", "yellow_midleft", "yellow_mid", "yellow_midright", "yellow_botleft", "yellow_bot", "yellow_botright",
+		"battle", "warp", "crossroads1", "crossroads2", "crossroads3", "crossroads4", "blue_arrow", "green_arrow", "red_arrow", "yellow_arrow"],
+	"tiles":
+		[
+			1, 1, 1, 1, 1, 1, 1,			1, 1, 1, 1, 1, 1, 1,			1, 1, 1, 1, 1, 1, 1,
+			1, 46, 6, 7, 6, 8, 0,			0, 0, 0, 0, 0, 0, 0,			0, 8, 6, 45, 6, 46, 1,
+			1, 6, 0, 0, 0, 6, 0,			0, 0, 36, 37, 38, 0, 0,			0, 6, 0, 0, 0, 6, 1,
+			1, 45, 0, 0, 0, 45,	0,			0, 0, 39, 40, 41, 0, 0,			0, 7, 0, 0, 0, 7, 1,
+			1, 6, 0, 0, 0, 6, 0,			0, 0, 42, 43, 44, 0, 0,			0, 6, 0, 0, 0, 6, 1,
+			1, 8, 6, 7, 6, 47, 6,			7, 6, 4, 3, 2, 6, 7,			6, 48, 6, 45, 6, 8, 1,
+			1, 0, 0, 0, 0, 6, 0,			0, 0, 36, 37, 38, 0, 0,			0, 6, 0, 0, 0, 0, 1,
+
+			1, 0, 0, 0, 0, 7, 0,			0, 0, 39, 40, 41, 0, 0,			0, 7, 0, 0, 0, 0, 1,
+			1, 0, 0, 0, 0, 6, 0,			0, 0, 42, 43, 44, 0, 0,			0, 6, 0, 0, 0, 0, 1,
+			1, 0, 9, 10, 11, 3, 9,			10, 11, 0, 0, 0, 27, 28,		29, 3, 27, 28, 29, 0, 1,
+			1, 0, 12, 13, 14, 4, 12,		13, 14, 0, 0, 0, 30, 31,		32, 2, 30, 31, 32, 0, 1,
+			1, 0, 15, 16, 17, 5, 15,		16, 17, 0, 0, 0, 33, 34,		35, 5, 33, 34, 35, 0, 1,
+			1, 0, 0, 0, 0, 6, 0,			0, 0, 18, 19, 20, 0, 0,			0, 6, 0, 0, 0, 0, 1,
+			1, 0, 0, 0, 0, 7, 0,			0, 0, 21, 22, 23, 0, 0,			0, 7, 0, 0, 0, 0, 1,
+
+			1, 0, 0, 0, 0, 6, 0,			0, 0, 24, 25, 26, 0, 0,			0, 6, 0, 0, 0, 0, 1,
+			1, 8, 6, 45, 6, 50, 6,			7, 6, 4, 5, 2, 6, 7,			6, 49, 6, 7, 6, 8, 1,
+			1, 6, 0, 0, 0, 6, 0,			0, 0, 18, 19, 20, 0, 0,			0, 6, 0, 0, 0, 6, 1,
+			1, 7, 0, 0, 0, 7, 0,			0, 0, 21, 22, 23, 0, 0,			0, 45, 0, 0, 0, 45, 1,
+			1, 6, 0, 0, 0, 6, 0,			0, 0, 24, 25, 26, 0, 0,			0, 6, 0, 0, 0, 6, 1,
+			1, 46, 6, 45, 6, 8, 0,			0, 0, 0, 0, 0, 0, 0,			0, 8, 6, 7, 6, 46, 1,
+			1, 1, 1, 1, 1, 1, 1,			1, 1, 1, 1, 1, 1, 1,			1, 1, 1, 1, 1, 1, 1
+		]
+}
