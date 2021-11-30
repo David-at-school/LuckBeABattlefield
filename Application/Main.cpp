@@ -2,7 +2,7 @@
 #include "Player.h"
 #include "Battle.h"
 #include <iostream>
-
+ 
 int main(int argc, char** argv) {
 	srand(time(NULL));
 	Deck deck;
