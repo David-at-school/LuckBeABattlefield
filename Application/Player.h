@@ -19,8 +19,9 @@ public:
 	bool playJoker();
 
 	int playerID;
+	Deck* deck;
+
 private:
 	std::string name;
 	std::vector<Card> hand;
-	Deck* deck;
 };

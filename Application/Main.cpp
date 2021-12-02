@@ -13,4 +13,13 @@ int main(int argc, char** argv) {
 	std::cout << "Player " << battle2Players(p1, p2) << " WINS!" << std::endl;
 	std::cout << "Player " << battle4Players(p1, p2, p3, p4) << " WINS!" << std::endl;
 	std::cout << "Player " << battle4Players(p1, p2, p3, p4, true) << " WINS!" << std::endl;
+	std::cout << "Player " << battle4Players(p1, p2, p3, p4, true) << " WINS!" << std::endl;
+	std::cout << "Player " << battle4Players(p1, p2, p3, p4, true) << " WINS!" << std::endl;
+	std::cout << "Player " << battle4Players(p1, p2, p3, p4, true) << " WINS!" << std::endl;
+	std::cout << "Player " << battle4Players(p1, p2, p3, p4, true) << " WINS!" << std::endl;
+	std::cout << "Player " << battle4Players(p1, p2, p3, p4, true) << " WINS!" << std::endl;
+	std::cout << "Player " << battle4Players(p1, p2, p3, p4, true) << " WINS!" << std::endl;
+	std::cout << "Player " << battle4Players(p1, p2, p3, p4, true) << " WINS!" << std::endl;
+	std::cout << "Player " << battle4Players(p1, p2, p3, p4, true) << " WINS!" << std::endl;
+
 }

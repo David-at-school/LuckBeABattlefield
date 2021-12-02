@@ -4,7 +4,9 @@ int battle2Players(Player player1, Player player2, bool reversed)
 {
 	Card card1;
 	Card card2;
+	bool tie;
 	do {
+		tie = false;
 		//Get Each Players Cards
 		card1 = player1.playCard();
 		card2 = player2.playCard();
@@ -19,7 +21,12 @@ int battle2Players(Player player1, Player player2, bool reversed)
 		if (card1.number == 7) reversed = !reversed;
 		if (card2.number == 7) reversed = !reversed;
 		//Determine if Tie
-	} while (card1.isEqual(card2));
+		if (card1.isEqual(card2)) {
+			tie = true;
+			player1.deck->Discard(card1);
+			player2.deck->Discard(card2);
+		}
+	} while (tie);
 	//Determine who won
 	if (reversed) { //Is the battle reversed
 		if (!card1.isHigher(card2)) {
@@ -45,6 +52,7 @@ int battle4Players(Player player1, Player player2, Player player3, Player player
 	Card highestCard;
 	int highestPlayer;
 	do {
+		tie = false;
 		//Get Each Players Cards
 		card1 = player1.playCard();
 		card2 = player2.playCard();
@@ -91,15 +99,15 @@ int battle4Players(Player player1, Player player2, Player player3, Player player
 			highestCard = card1;
 			highestPlayer = 1;
 
-			if (highestCard.isHigher(card2)) {
+			if (highestCard.isHigher(card2) && card2.number != 0) {
 				highestCard = card2;
 				highestPlayer = 2;
 			}
-			if (highestCard.isHigher(card3)) {
+			if (highestCard.isHigher(card3) && card3.number != 0) {
 				highestCard = card3;
 				highestPlayer = 3;
 			}
-			if (highestCard.isHigher(card4)) {
+			if (highestCard.isHigher(card4) && card4.number != 0) {
 				highestCard = card4;
 				highestPlayer = 4;
 			}
@@ -116,6 +124,13 @@ int battle4Players(Player player1, Player player2, Player player3, Player player
 		}
 		if (highestCard.isEqual(card4) && highestPlayer != 4) {
 			tie = true;
+		}
+
+		if (tie) {
+			player1.deck->Discard(card1);
+			player2.deck->Discard(card2);
+			player3.deck->Discard(card3);
+			player4.deck->Discard(card4);
 		}
 		//Determine if Tie
 	} while (tie);
