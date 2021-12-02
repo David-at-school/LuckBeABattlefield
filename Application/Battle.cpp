@@ -70,36 +70,66 @@ int battle4Players(Player player1, Player player2, Player player3, Player player
 		if (card4.number == 7) reversed = !reversed;
 
 		//Find who has the highest card(don't care about ties)
-		highestCard = card1;
-		highestPlayer = 1;
+		if (!reversed) {
+			highestCard = card1;
+			highestPlayer = 1;
 
-		if (!highestCard.isHigher(card2)) {
-			highestCard = card2;
-			highestPlayer = 2;
+			if (!highestCard.isHigher(card2)) {
+				highestCard = card2;
+				highestPlayer = 2;
+			}
+			if (!highestCard.isHigher(card3)) {
+				highestCard = card3;
+				highestPlayer = 3;
+			}
+			if (!highestCard.isHigher(card4)) {
+				highestCard = card4;
+				highestPlayer = 4;
+			}
 		}
-		if (!highestCard.isHigher(card3)) {
-			highestCard = card3;
-			highestPlayer = 3;
-		}
-		if (!highestCard.isHigher(card4)) {
-			highestCard = card4;
-			highestPlayer = 4;
+		else {
+			highestCard = card1;
+			highestPlayer = 1;
+
+			if (highestCard.isHigher(card2)) {
+				highestCard = card2;
+				highestPlayer = 2;
+			}
+			if (highestCard.isHigher(card3)) {
+				highestCard = card3;
+				highestPlayer = 3;
+			}
+			if (highestCard.isHigher(card4)) {
+				highestCard = card4;
+				highestPlayer = 4;
+			}
 		}
 		//Find a tie
-
+		if (highestCard.isEqual(card1) && highestPlayer != 1) {
+			tie = true;
+		}
+		if (highestCard.isEqual(card2) && highestPlayer != 2) {
+			tie = true;
+		}
+		if (highestCard.isEqual(card3) && highestPlayer != 3) {
+			tie = true;
+		}
+		if (highestCard.isEqual(card4) && highestPlayer != 4) {
+			tie = true;
+		}
 		//Determine if Tie
 	} while (tie);
 	//Determine who won - Figure out this logic later
-	if (reversed) { //Is the battle reversed
-		if (!card1.isHigher(card2)) {
-			return player2.playerID;
-		}
+	if (highestCard.isEqual(card1)) {
 		return player1.playerID;
 	}
-	else {
-		if (card1.isHigher(card2)) {
-			return player1.playerID;
-		}
+	if (highestCard.isEqual(card2)) {
 		return player2.playerID;
+	}
+	if (highestCard.isEqual(card3)) {
+		return player3.playerID;
+	}
+	if (highestCard.isEqual(card4)) {
+		return player4.playerID;
 	}
 }
